@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DETAILS</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+  <link rel="stylesheet" href="sheeet.css">
+  <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+  <div style="background-image: url('17.jpg');   background-size: 100% 100%;  background-repeat: no-repeat;">
+
+
+  <h1 style="text-align: center"> CUSTOMER DETAILS</h1>
+
+      <div id="myGrid" style="height: 535px; width:100%; padding-top:10px;" class="ag-theme-alpine"></div>
+
+  <!-- <ul>
+  <li><a class="btn" href="view.html" >TRANSFER TO</a></li>
+  <!-- <li><a class="btn" href="history.html" >TRANSACTIONS</a></li>
+  </ul> -->
+<input class="btn btn-primary" type="button" onclick="modalDisplay()" value="TRANSFER TO">
+
+<div class="modal" id="instructions" data-backdrop="static" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">TRANSFER TO </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                          <div class="form-group row">
+                                <div class="col-sm-4">
+                                    <div style="display: flow-root">
+                                        <label class="input-group-text" for="inputGroupSelect01">Sender's Name</label>
+                                        <select id="sendersName"name="Enter Name" class="form-control">
+                                    <option color="grey" selected hidden value =''>Enter Name</option>
+                                           <option color="black" value="SARIHA">SARIHA</option>
+                                           <option color="black" value="SASI">SASI</option>
+                                           <option color="black" value="GOWSI">GOWSI</option>
+                                    <option color="black" value="RAM">RAM</option>
+                                    <option color="black" value="VINAY">VINAY</option>
+                                    <option color="black" value="KRISHNA">KRISHNA</option>
+                                    <option color="black" value="ANUSHYA">ANUSHYA</option>
+                                    <option color="black" value="SONIYA">SONIYA</option>
+                                    <option color="black" value="VINITH">VINITH</option>
+                                    <option color="black" value="KRISH">KRISH</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div style="display: flow-root">
+                                        <label class="input-group-text" for="inputGroupSelect01">Receivers Name</label>
+                                        <select id="receiversName"name="Enter Name" class="form-control">
+                                    <option color="grey" selected hidden value =''>Enter Name</option>
+                                    <option color="black" value="SARIHA">SARIHA</option>
+                                    <option color="black" value="SASI">SASI</option>
+                                    <option color="black" value="GOWSI">GOWSI</option>
+                                    <option color="black" value="RAM">RAM</option>
+                                    <option color="black" value="VINAY">VINAY</option>
+                                    <option color="black" value="KRISHNA">KRISHNA</option>
+                                    <option color="black" value="ANUSHYA">ANUSHYA</option>
+                                    <option color="black" value="SONIYA">SONIYA</option>
+                                    <option color="black" value="VINITH">VINITH</option>
+                                    <option color="black" value="KRISH">KRISH</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4" style="text-align: center;">
+                                    <div style="display: flow-root">
+                                      <label> Enter Amount</label>
+                                      <input type="number" class="form-control" id="Amount">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group row" style="text-align: center;"> -->
+                                  <input type="button" class="btn btn-primary" onclick="updateRecord()" value="Transfer" style="display: flex; justify-content: center;">
+                            <!-- </div> -->
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

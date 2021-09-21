@@ -1,0 +1,135 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+.wrapper{
+	background:url(17.jpg) no-repeat;
+	  background-position: center;
+	background-size: cover;
+	height: 100vh;
+	
+}
+
+.navbar{
+	height: 80px;
+	width:100%;
+	background: rgba(0,0,255,0.2);
+}
+.logo{
+	
+	position:relative;
+	width:150px;
+	height: 150;
+padding : 25px ;
+}
+.navbar ul{
+	float:right;
+	margin-right: 20px
+}
+.navbar ul li{
+	list-style:none;
+	margin:0,8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a {
+	text-decoration:none;
+	color: white;
+	font-size:20px;
+	padding:6px 13px;
+
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: red;
+	border-radius : 2px;
+}
+.wrapper .center{
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform :translate(-50%,-50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+.center .buttons{
+	margin: 35px 28px;
+}
+.buttons button{
+	height:50px;
+	width:150px;
+	font-size: 18px;
+	color: #ffb3b3;
+	background:black;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+div.background {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:white;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
